@@ -33,7 +33,6 @@ class Product(models.Model):
     name = models.CharField(max_length=150)
     description = models.TextField()
     image = models.ImageField(upload_to='upload/', blank=True, null=True)
-    price = models.DecimalField(max_digits=)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.PositiveIntegerField(default=0)
 
